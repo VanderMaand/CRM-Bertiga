@@ -158,14 +158,14 @@ Walaupun pengguna tidak perlu memahami teknologi untuk menggunakan aplikasi ini,
 
 | Teknologi         | Kegunaan                           |
 | ----------------- | ---------------------------------- |
-| **PHP**           | Menjalankan logika aplikasi        |
-| **MySQL/MariaDB** | Menyimpan data aplikasi            |
-| **Bootstrap**     | Membantu membuat tampilan aplikasi |
-| **HTML & CSS**    | Membentuk tampilan halaman         |
-| **JavaScript**    | Membantu interaksi pada halaman    |
-| **Apache**        | Menjalankan aplikasi web           |
+|            |         |
+|  |             |
+|      |  |
+|     |          |
+|     |     |
+|         |            |
 
-Sistem dirancang sebagai aplikasi web yang dapat diakses melalui browser seperti **Google Chrome, Mozilla Firefox, dan Microsoft Edge**.
+Sistem dirancang sebagai aplikasi web yang dapat diakses melalui browser seperti **...**.
 
 ---
 
@@ -190,19 +190,8 @@ Desain antarmuka menggunakan konsep yang sederhana, responsif, dan berorientasi 
 ## 📁 Struktur Proyek
 
 ```text
-Coffee-Street/
-│
-├── 📁 assets/
-├── 📁 database/
-├── 📁 pages/
-├── 📁 controllers/
-├── 📁 models/
-├── 📁 views/
-├── 📁 config/
-│
-├── 📄 index.php
-├── 📄 README.md
-└── 📄 ...
+
+
 ```
 
 > Struktur folder dapat berubah mengikuti perkembangan implementasi aplikasi.
