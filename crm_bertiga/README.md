@@ -189,8 +189,64 @@ Desain antarmuka menggunakan konsep yang sederhana, responsif, dan berorientasi 
 
 ## 📁 Struktur Proyek
 
-```text
-
+```
+lib/
+├── main.dart
+├── app.dart                        # MaterialApp + Provider setup
+├── core/
+│   ├── constants/                  # warna (#6F4E37 dll), style guide
+│   ├── supabase_client.dart
+│   ├── services/
+│   │   ├── auth_service.dart
+│   │   ├── biometric_service.dart
+│   │   ├── location_service.dart
+│   │   ├── camera_service.dart
+│   │   ├── notification_service.dart   # FCM + local notification
+│   │   ├── connectivity_service.dart   # deteksi online/offline
+│   │   └── local_db_service.dart       # SQLite/Hive untuk offline queue
+│   └── utils/
+├── models/
+│   ├── profile_model.dart
+│   ├── produk_model.dart
+│   ├── bahan_baku_model.dart
+│   ├── penjualan_model.dart
+│   ├── payroll_model.dart
+│   └── ...
+├── providers/
+│   ├── auth_provider.dart
+│   ├── transaksi_provider.dart
+│   ├── stok_provider.dart
+│   ├── payroll_provider.dart
+│   ├── laporan_provider.dart
+│   └── spin_wheel_provider.dart
+├── screens/
+│   ├── auth/
+│   │   └── login_screen.dart
+│   ├── owner/
+│   │   ├── dashboard_owner_screen.dart
+│   │   ├── persetujuan_screen.dart
+│   │   ├── laporan_screen.dart
+│   │   └── audit_keuangan_screen.dart
+│   ├── manajer/
+│   │   ├── dashboard_manajer_screen.dart
+│   │   ├── kelola_bahan_baku_screen.dart
+│   │   ├── pembelian_screen.dart
+│   │   ├── input_karyawan_screen.dart
+│   │   └── payroll_screen.dart
+│   ├── karyawan/
+│   │   ├── dashboard_karyawan_screen.dart
+│   │   ├── absensi_screen.dart
+│   │   ├── input_transaksi_screen.dart
+│   │   ├── cetak_struk_screen.dart
+│   │   ├── paycheck_screen.dart
+│   │   └── spin_wheel_screen.dart
+│   └── shared/
+│       ├── search_screen.dart
+│       └── notification_screen.dart
+└── widgets/
+    ├── common/
+    └── spin_wheel/
+        └── spin_wheel_widget.dart
 
 ```
 
