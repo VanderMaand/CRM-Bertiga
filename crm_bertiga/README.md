@@ -156,14 +156,15 @@ Pihak yang berwenang dapat memeriksa data transaksi, pengeluaran, dan laporan ke
 
 Walaupun pengguna tidak perlu memahami teknologi untuk menggunakan aplikasi ini, sistem dikembangkan menggunakan beberapa teknologi berikut:
 
-| Teknologi         | Kegunaan                           |
-| ----------------- | ---------------------------------- |
-|            |         |
-|  |             |
-|      |  |
-|     |          |
-|     |     |
-|         |            |
+| Aspek | SRS Asli (Web) | Versi Mobile |
+|---|---|---|
+| Platform | Web browser (Bootstrap) | Flutter — Android (prioritas), iOS menyusul |
+| Backend | PHP + MySQL/MariaDB | Supabase (PostgreSQL + Auth + Realtime + Storage + Edge Functions) |
+| State Management | — | Provider |
+| Autentikasi | password_hash/verify | Supabase Auth (email/password) + Biometric (lapisan tambahan) |
+| Absensi | GPS saja (dokumen asli) | GPS + Foto Wajah + Biometric (3 faktor) |
+| Notifikasi | Email (opsional) | Push Notification (FCM) + Local Notification |
+| Konektivitas | Selalu online | Offline-first untuk **Input Transaksi** & **Absensi**, modul lain online-only |
 
 Sistem dirancang sebagai aplikasi web yang dapat diakses melalui browser seperti **...**.
 
